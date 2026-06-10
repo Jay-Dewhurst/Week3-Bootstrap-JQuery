@@ -1,21 +1,33 @@
-/* Variables */
 :root {
-    --primary-color: #7fcb49af;
-    --text-color: #ffffff;
-    --border-color: #ff0000;
+    --Border-Color: #810101;
 }
 
-/* container style */
-.custom-style { 
-    border-width: 5px solid var(--border-color);
-    border-radius: 12px;
-    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.75);
-    padding: 15px;
-    margin: 15px;
+.navbar {
+    border: 1.5px solid var(--Border-Color);
 }
 
-/* Make the image fully responsive */
-.carousel-inner img {
-    width: 100%;
-    height: 100%;
+.red-glow-text {
+  color: #ffffff; /* White text so the red glow stands out */
+  text-shadow: 0 0 15px #ff0000, 0 0 25px #ff0000; /* X-offset: 0, Y-offset: 0, Blur: 15px, Color: Pure Red */
+  text-align: center;
+}
+
+/* 1. THE TAB WRAPPER (Justify & Layout) */
+.ui-tabs .ui-tabs-nav {
+  display: flex !important;
+  justify-content: space-between; /* Spreads tabs evenly from edge to edge */
+}
+
+/* 1. THE OUTERMOST CONTAINER BOX */
+#tabs.ui-tabs {
+  border: 2px solid #ff0000 !important; /* Thick red border on the very outside */
+  border-radius: 12px;                  /* Smoothly rounds the outermost corners */
+  padding: 10px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.7); /* Deep black outer drop shadow */
+}
+
+.carousel-inner > .item > img > 
+    .carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
   }
