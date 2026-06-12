@@ -1,0 +1,59 @@
+:root {
+    --Border-Color: #810101;
+}
+
+.navbar {
+    border: 1.5px solid var(--Border-Color);
+}
+
+.red-glow-text {
+  color: #ffffff; /* White text so the red glow stands out */
+  text-shadow: 0 0 15px var(--Border-Color), 0 0 25px var(--Border-Color); /* X-offset: 0, Y-offset: 0, Blur: 15px, Color: Pure Red */
+  text-align: center;
+}
+
+/* 1. THE TAB WRAPPER (Justify & Layout) */
+.ui-tabs .ui-tabs-nav {
+  display: flex !important;
+  justify-content: space-between; /* Spreads tabs evenly from edge to edge */
+  border: 2px solid var(--Border-Color);
+  background-color: #212529;
+}
+
+/* 1. THE OUTERMOST CONTAINER BOX */
+#tabs.ui-tabs {
+  border: 3.5px solid var(--Border-Color) !important; /* Thick red border on the very outside */
+  border-radius: 12px; /* Smoothly rounds the outermost corners */
+  padding: 10px;
+}
+
+.custom-red-card {
+  border: 3.5px solid var(--Border-Color) !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+}
+
+/* Start of Form Code */
+.contact-form-wrapper {
+  width: 100%;
+  border: 3.5px solid var(--Border-Color);
+  border-radius: 12px;
+  padding: 15px;
+}
+
+.contact-form-wrapper .form-control {
+  border-radius: 8px;
+}
+
+.contact-form-wrapper .btn-submit {
+  border-radius: 8px;
+  padding: 10px 30px;
+}
+
+/* HR Spacer Code */
+
+.spaced-line {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0; /* 20px top and bottom padding/spacing */
+}
